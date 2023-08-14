@@ -1,3 +1,4 @@
+#importing needed modules
 import time
 import random
 import socket
@@ -12,18 +13,18 @@ def generate_client_id():
     return f"{hostname}_iot_client"
 
 # MQTT settings
-mqtt_broker_address = "your_mqtt_broker_address"
-mqtt_port = 8884
+mqtt_broker_address = "xxxxxxxx" #enter broker address here
+mqtt_port = 0000 #enter port
 mqtt_topic = "iot/temperature"
 
 # AMQP settings
-amqp_broker_address = "rabbit@LAPTOP-21QBPHVG"
-amqp_port = 5672
+amqp_broker_address = "xxxxxxxxxx" #enter broker address here
+amqp_port = 0000 #enter port here
 amqp_exchange = "iot_exchange"
 amqp_routing_key = "iot.temperature"
 
 # CoAP settings
-coap_server_address = "your_coap_server_address"
+coap_server_address = "xxxxxxx" #enter coap  server address
 
 # Function to calculate latency
 def calculate_latency(start_time):
